@@ -10,7 +10,7 @@ import pyLDAvis.gensim_models as gensimvis
 lda_model = gensim.models.LdaModel.load("lda_model.gensim")
 dictionary = corpora.Dictionary.load("dictionary.gensim")
 corpus = pickle.load(open("corpus.pkl", "rb"))
-df = pd.read_csv("data/processed_data.csv")
+df = pd.read_csv("../data/processed_data.csv")
 
 # Danh sách tên các chủ đề (dựa trên mô hình LDA đã huấn luyện)
 topic_names = {

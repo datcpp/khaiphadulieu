@@ -20,7 +20,7 @@ topic_names = {
 
 def main():
     # Load dữ liệu
-    df = pd.read_csv("data/processed_data.csv")
+    df = pd.read_csv("../data/processed_data.csv")
     texts = [doc.split() for doc in df['processed_plot']]
 
     # Tạo dictionary và corpus
